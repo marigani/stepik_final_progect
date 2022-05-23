@@ -21,3 +21,16 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, ".basket-mini a")
+    EMPTY_MESSAGE = (By.CSS_SELECTOR, "#messages .alert-info .alertinner p")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
+class BasketPageLocators():
+    EMPTY_MESSAGE = (By.CSS_SELECTOR, ".content #content_inner p")
+    BOOK_IN_BASKET = (By. CSS_SELECTOR, ".basket-items .col-sm-4")
+
+class LoginPageLocators():
+    FILD_EMAIL = (By. ID, "id_registration-email")
+    FILD_PASSORD = (By. ID, "id_registration-password1")
+    FILD_CONFIRM_PASSWORD = (By. ID, "id_registration-password2")
+    BUTTON_REGISTER = (By. NAME, "registration_submit")
